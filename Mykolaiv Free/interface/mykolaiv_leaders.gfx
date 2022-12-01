@@ -1,3 +1,16 @@
 spriteTypes = {
-
+spriteType = {
+        name = "GFX_portrait_Andriu"
+        texturefile = "gfx/leaders/MYK/Andriu.dds"
+    }
+}
+spriteType = {
+        name = "GFX_portrait_Myhajlo_Korsakov"
+        texturefile = "gfx/leaders/MYK/Myhajlo_Korsakov.dds"
+    }
+}
+spriteType = {
+        name = "GFX_portrait_MYK_Butyrin"
+        texturefile = "gfx/leaders/MYK/MYK_Butyrin.dds"
+    }
 }
