@@ -1,0 +1,16 @@
+characters={
+	MYK_Kolyhayev={
+		name="Ігор Колихаєв"
+		portraits={
+			civilian={
+				large ="GFX_Kolyhayev"
+			}
+		}
+		country_leader={
+			traits={ economist }
+			ideology = moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+} 

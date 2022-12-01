@@ -1,0 +1,59 @@
+characters={
+
+	MYK_Kim={
+		name="Віталій Кім"
+		portraits={
+			civilian={
+				large ="GFX_Kim_Vitaliy"
+			}
+		}
+		country_leader={
+			traits={ liberal_democratic_paragon }
+			ideology = liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MYK_Volodymr={
+		name="Володимир Матвєєв"
+		portraits={
+			civilian={
+				large ="GFX_Matviyev"
+			}
+		}
+		country_leader={
+			traits={  }
+			ideology = anti_revisionism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MYK_Denys_Yantar={
+		name="Денис Янтар"
+		portraits={
+			civilian={
+				large ="GFX_Yantar"
+			}
+		}
+		country_leader={
+			traits={ anti_communist }
+			ideology = fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MYK_Granaturov={
+		name="Юрій Гранатуров"
+		portraits={
+			civilian={
+				large ="GFX_Granaturov"
+			}
+		}
+		country_leader={
+			traits={ economic_reformer  }
+			ideology = oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+} 

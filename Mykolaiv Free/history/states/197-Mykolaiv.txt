@@ -1,0 +1,36 @@
+
+state={
+	id=197
+	name="STATE_197"
+
+	history={
+		victory_points = {
+			11683 3 
+		}
+		owner = MYK
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = MYK
+		1939.1.1 = {
+			buildings = {
+				dockyard = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		574 3403 3755 9573 11546 11683 
+	}
+	manpower=896311
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=5.000
+}
