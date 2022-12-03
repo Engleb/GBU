@@ -14,11 +14,11 @@ characters={
 			id=-1
 		}
 	}
-	MYK_Volodymr={
-		name="Володимир Матвєєв"
+	MYK_Butyrin={
+		name="Сергій Бутирін "
 		portraits={
 			civilian={
-				large ="GFX_Matviyev"
+				large ="GFX_portrait_MYK_Butyrin"
 			}
 		}
 		country_leader={
@@ -42,18 +42,62 @@ characters={
 			id=-1
 		}
 	}
-	MYK_Granaturov={
-		name="Юрій Гранатуров"
+	MYK_Pokrovsyy={
+		name="Андрій Покровський "
 		portraits={
+			army = {
+			 large ="GFX_portrait_Andriu"
+			}
 			civilian={
-				large ="GFX_Granaturov"
+				large ="GFX_portrait_Andriu"
 			}
 		}
 		country_leader={
-			traits={ economic_reformer  }
+			traits={ revolutionary_general  }
 			ideology = oligarchism
 			expire="1965.1.1.1"
 			id=-1
+		}
+		navy_leader={
+			traits={ old_guard  battleship_adherent ironside  }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	MYK_Myhajlo_Korsakov={
+		name="Михайло Римський"
+		portraits={
+			army={
+				large=GFX_portrait_Myhajlo_Korsakov
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = myhajlo_korsakov
+			allowed = {
+				original_tag = MYK
+			}
+			traits = {
+			 naval_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+		
+		navy_leader={
+			traits={ sea_wolf spotter  bold  }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=4
+			coordination_skill=4
+			legacy_id=0
 		}
 	}
 } 
