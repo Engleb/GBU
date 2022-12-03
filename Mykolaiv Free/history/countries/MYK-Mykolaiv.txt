@@ -1,5 +1,5 @@
 ﻿capital = 197 #Mykolaiv
-oob =MYK_1936
+oob = MYK_1936
 set_research_slots = 3
 
 # Starting tech
@@ -79,15 +79,26 @@ if = {
 		basic_torpedo = 1
 	}
 }
-if = {
-  limit = {date < 1938.01.01}
-  give_guarantee = FRA
-}
+create_equipment_variant = {
+		name = "Zavetnyj Class"				# Завидний
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+}	
 
+recruit_character = MYK_Myhajlo_Korsakov
 recruit_character = MYK_Kim
 recruit_character = MYK_Volodymr
 recruit_character = MYK_Denys_Yantar
-recruit_character = MYK_Granaturov
+recruit_character = MYK_Pokrovsyy
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.4.7"

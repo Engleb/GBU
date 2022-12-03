@@ -52,4 +52,14 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
+
+  fleet = {
+   task_force = {					
+			name = "Миколаївська Флотилія"	
+			location = 11683 # Canal Zone
+			# Виживший флот			
+			ship = { name = "Завидний" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MYK version_name = "Zavetnyj Class" } } }
+            }
+    }
+  } 		
 }
