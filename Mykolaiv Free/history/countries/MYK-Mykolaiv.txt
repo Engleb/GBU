@@ -100,18 +100,18 @@ recruit_character = MYK_Volodymr
 recruit_character = MYK_Denys_Yantar
 recruit_character = MYK_Pokrovsyy
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.4.7"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = { #popularities based on 1933 election statistics.
-	democratic = 44
+	democratic = 20
 	fascism = 30
 
-	communism = 6
-	neutrality = 20
+	communism = 5
+	neutrality = 45
 }
 
 
