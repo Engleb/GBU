@@ -1,4 +1,4 @@
-﻿capital = 197 #Mykolaiv
+﻿capital = 192 #Odesa
 oob = ODE_1936
 set_research_slots = 3
 
@@ -79,15 +79,7 @@ if = {
 		basic_torpedo = 1
 	}
 }
-if = {
-  limit = {date < 1938.01.01}
-  give_guarantee = FRA
-}
 
-recruit_character = MYK_Kim
-recruit_character = MYK_Volodymr
-recruit_character = MYK_Denys_Yantar
-recruit_character = MYK_Granaturov
 set_politics = {
 	ruling_party = communism
 	last_election = "1935.4.7"
