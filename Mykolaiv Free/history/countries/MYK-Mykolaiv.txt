@@ -101,7 +101,7 @@ recruit_character = MYK_Denys_Yantar
 recruit_character = MYK_Pokrovsyy
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1935.4.7"
+	last_election = "1933.1.30"
 	election_frequency = 36
 	elections_allowed = yes
 }
