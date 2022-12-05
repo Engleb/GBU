@@ -14,4 +14,8 @@ spriteTypes = {
         texturefile = "gfx/leaders/MYK/MYK_Butyrin.dds"
     }
 
+    spriteType = {
+        name = "GFX_idea_Myhajlo_Korsakov"
+        texturefile = "gfx/leaders/MYK/Minster_Korsakov.dds"
+    }
 }
