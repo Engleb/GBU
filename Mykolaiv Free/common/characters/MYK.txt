@@ -69,8 +69,11 @@ characters={
 		}
 	}
 	MYK_Myhajlo_Korsakov={
-		name="Михайло Римський"
+		name="Михайло Римський-Корсаков"
 		portraits={
+			navy={
+				small="GFX_idea_Myhajlo_Korsakov"
+			}
 			army={
 				large=GFX_portrait_Myhajlo_Korsakov
 			}
