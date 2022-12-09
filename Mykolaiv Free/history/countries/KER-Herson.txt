@@ -79,7 +79,7 @@ if = {
 		basic_torpedo = 1
 	}
 }
-recruit_character = MYK_Kolyhayev
+recruit_character = KER_bolbochan
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.4.7"

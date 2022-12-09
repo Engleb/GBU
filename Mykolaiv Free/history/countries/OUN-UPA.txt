@@ -1,5 +1,5 @@
-﻿capital = 197 #Mykolaiv
-oob = MYK_1936
+﻿capital = 198 #Vinnyacja
+oob = OUN_1936
 set_research_slots = 3
 
 # Starting tech
@@ -60,7 +60,7 @@ if = {
 	}
 }
 
-recruit_character = MYK_Myhajlo_Korsakov
+recruit_character = OUN_Konovalec
 
 set_politics = {
 	ruling_party = fascism
