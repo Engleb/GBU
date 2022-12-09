@@ -1,0 +1,16 @@
+characters={
+	KER_bolbochan={
+		name="Петро Болбочан"
+		portraits={
+			civilian={
+				large ="GFX_Bolbochan"
+			}
+		}
+		country_leader={
+			traits={  }
+			ideology = moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+} 
