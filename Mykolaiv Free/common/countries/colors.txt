@@ -824,10 +824,14 @@ KER = {
 	color_ui = rgb { 120 0 110 }
 }
 ODE = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb {  125 13 24 }
+	color = rgb { 255 137 0 }
+	color_ui = rgb {  195 104 0 }
 }
 OUN = {
 	color = rgb { 31 23 23 }
 	color_ui = rgb {  0 0 0 }
+}
+UKG = {
+	color = rgb { 229 235 69 }
+	color_ui = rgb {  247 255 0 }
 }

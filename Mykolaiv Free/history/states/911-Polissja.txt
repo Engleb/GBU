@@ -1,0 +1,20 @@
+state={
+	id=911
+	name="STATE_911"
+	provinces={
+		6556 11453 6232 9554
+	}
+	history = {
+		owner = UKG
+		victory_points = { 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BEL
+		add_core_of = UKG
+	}
+	manpower= 34 500
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
