@@ -10971,3 +10971,6 @@
  ODE_communism_ADJ: "робочий"
  ODE_democratic_ADJ: "республіканський"
  ODE_neutrality_ADJ: "королівська"
+ OUN_fascism: "Українська Національна Держава"
+ ODE_fascism_DEF: "Українська Національна Держава"
+ ODE_fascism_ADJ: "Національна"

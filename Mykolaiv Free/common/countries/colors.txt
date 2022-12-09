@@ -827,4 +827,7 @@ ODE = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb {  125 13 24 }
 }
-
+OUN = {
+	color = rgb { 31 23 23 }
+	color_ui = rgb {  0 0 0 }
+}

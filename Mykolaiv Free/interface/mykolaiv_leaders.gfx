@@ -18,4 +18,8 @@ spriteTypes = {
         name = "GFX_idea_Myhajlo_Korsakov"
         texturefile = "gfx/leaders/MYK/Minister_Korsakov.dds"
     }
+    spriteType = {
+        name = "GFX_Bolbochan"
+        texturefile = "gfx/leaders/KER/Bolbochan.dds"
+    }
 }
