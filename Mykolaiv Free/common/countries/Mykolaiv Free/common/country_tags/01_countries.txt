@@ -1,5 +1,0 @@
-MYK = countries/Mykolaiv.txt
-KER = countries/Herson.txt
-ODE = countries/Odesa.txt
-OUN = countries/OUN.txt
-UKG = countries/UKG.txt
