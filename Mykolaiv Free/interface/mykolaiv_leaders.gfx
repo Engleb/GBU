@@ -22,8 +22,4 @@ spriteTypes = {
         name = "GFX_Bolbochan"
         texturefile = "gfx/leaders/KER/Bolbochan.dds"
     }
-    spriteType = {
-        name = "GFX_Konovalec"
-        texturefile = "gfx/leaders/KER/Konovalec.dds"
-    }
 }

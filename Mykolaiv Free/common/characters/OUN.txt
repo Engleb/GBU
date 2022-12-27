@@ -3,7 +3,7 @@ characters={
 		name="Євген Коновалець"
 		portraits={
 			civilian={
-				large ="GFX_Konovalec"
+				large ="GFX_Bolbochan"
 			}
 		}
 		country_leader={
