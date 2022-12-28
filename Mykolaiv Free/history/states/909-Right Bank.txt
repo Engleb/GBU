@@ -13,7 +13,6 @@ state={
 		11715 1
 	}
 	add_core_of = KER
-	add_core_of = UKR
 	owner = KER
   } 
 	manpower=22989

@@ -1,0 +1,21 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		453 472 486 9463 9479 11452 
+	}
+	history={
+		victory_points = {
+			453 2
+		}
+		owner = UKG
+		buildings = {
+			infrastructure = 3 
+			air_base = 3
+		}
+		add_core_of = UKG
+	}
+	manpower=100594
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+}
