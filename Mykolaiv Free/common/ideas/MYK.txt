@@ -1,0 +1,30 @@
+ideas = {
+
+	country = {
+
+		red_pidor_of_ukraine = {
+		picture = por_iberian_workers_united
+			
+			allowed = {
+			 always = no
+             tag = MYK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.15
+				communism_drift = 0.03
+				communism_acceptance = 50
+			}
+		}
+    
+	   
+				
+	}   
+}

@@ -87,6 +87,7 @@ recruit_character = MYK_Kim
 recruit_character = MYK_Volodymr
 recruit_character = MYK_Denys_Yantar
 recruit_character = MYK_Pokrovsyy
+add_ideas ={red_pidor_of_ukraine}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.1.30"
