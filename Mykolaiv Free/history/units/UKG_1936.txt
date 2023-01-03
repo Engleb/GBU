@@ -31,7 +31,7 @@ units = {
 		location = 488
 		division_template = "Cavalerijska Brygada"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 	division= { 
 		division_name = {
@@ -41,7 +41,7 @@ units = {
 		location = 525
 		division_template = "Strilci"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 	division= { 
 		division_name = {
@@ -51,7 +51,7 @@ units = {
 		location = 6593
 		division_template = "Strilci"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 	division= { 
 		division_name = {
@@ -61,6 +61,86 @@ units = {
 		location = 3568
 		division_template = "Strilci"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3750
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11490
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3557
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3542
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 453
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3557
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3542
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 453
+		division_template = "Strilci"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 }

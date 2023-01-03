@@ -4,6 +4,9 @@ state={
 	provinces={
 		453 472 486 9463 9479 11452 
 	}
+
+	state_category = town
+	
 	history={
 		victory_points = {
 			453 2

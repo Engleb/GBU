@@ -1,0 +1,36 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+OUN_balance_of_powers = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = GFX_category_icon	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+	  always = no
+	}
+	visible = {
+		tag = OUN		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+
+reunification_of_ukraine = {
+	icon = GFX_category_icon
+	picture = GFX_Ukraine_map		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+	 OR = {
+		tag = OUN
+		tag = UKG
+		tag = MYK
+		tag = ODE
+		tag = PSL
+		tag = SLB
+		tag = KER
+	}
+  }
+}

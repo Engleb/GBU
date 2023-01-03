@@ -26,4 +26,8 @@ spriteTypes = {
         name = "GFX_Konovalec"
         texturefile = "gfx/leaders/OUN/Konovalec.dds"
     }
+    spriteType = {
+        name = "GFX_Skoropadskyy"
+        texturefile = "gfx/leaders/UKG/Skoropadskyy.dds"
+    }
 }

@@ -4,6 +4,9 @@ state={
 	provinces={
 		6556 11453 6232 9554
 	}
+
+	state_category = rural
+	
 	history = {
 		owner = UKG
 		victory_points = { 
@@ -12,7 +15,7 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = BEL
+		add_core_of = BLR
 		add_core_of = UKG
 	}
 	manpower= 34500

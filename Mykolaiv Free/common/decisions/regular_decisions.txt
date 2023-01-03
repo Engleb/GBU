@@ -1,0 +1,554 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	simple_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+			}
+			is_debug = yes
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "DECISION_EFFECT_YAY"
+			hidden_effect = {
+				add_political_power = 500
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+}	
+	###################################################################################################################
+				#### TARGETED DECISIONS WILL PUT THE FLAG OF THE TARGET WITH THE DECISION ICON ####
+	#### SCOPING FOR THE TARGET OF THE DECISION IS DONE WITH "FROM" and the country currently being played is ROOT ####
+	###################################################################################################################	
+reunification_of_ukraine = {
+	kyiv_capital = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+			ROOT = {
+				OR = {
+				controls_state = 202
+				owns_state = 202
+			}
+		 }
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = UKG 
+		 }		
+		}		
+		cost = 100		#The cost to execute the decision, by default its political power.
+        days_remove = 100
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			set_capital = {
+				state = 202
+				remember_old_capital = yes
+			}
+			202 = {
+			add_core_of = ROOT
+		    } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}
+	podillja_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+				OR = {
+				controls_state = 198
+				owns_state = 198
+			}
+		  }
+
+			ROOT = {
+				OR = {
+				controls_state = 199
+				owns_state = 199
+			 }
+			}
+		}
+	 }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = OUN 
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			199 = {
+			add_core_of = ROOT
+		    } 
+			198 = {
+				add_core_of = ROOT
+            } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	polissja_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+			 OR = {	
+				controls_state = 911
+				owns_state = 911
+			 }
+		   }
+			ROOT = {
+			  OR = {
+				controls_state = 201
+				owns_state = 201
+			 }
+			}
+		}
+	  }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = UKG
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			911 = {
+			add_core_of = ROOT
+		    } 
+			201 = {
+				add_core_of = ROOT
+            } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	naddniprjanshyna_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+				OR = {
+				controls_state = 203
+				owns_state = 203
+			}
+		 }
+			ROOT = {
+			 OR = {
+				controls_state = 259
+				owns_state = 259
+			}
+		 }
+		 
+		}
+	 }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = UKG
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			203 = {
+			add_core_of = ROOT
+		    } 
+			259 = {
+				add_core_of = ROOT
+            } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	slobozhanshynna_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+			   OR = {
+				controls_state = 225
+				owns_state = 225
+			   }
+		 }
+			ROOT = {
+			 OR = {
+				controls_state = 221
+				owns_state = 221
+			 }
+		 }
+		 
+		}
+	 }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = SLB
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			225 = {
+			add_core_of = ROOT
+		    } 
+			221 = {
+				add_core_of = ROOT
+            } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	sivershynna_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  ROOT = {
+				OR = {
+				controls_state = 193
+				owns_state = 193
+			    }
+		  }
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = UKG 
+		 }		
+		}		
+		cost = 25		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			 193 = {
+			add_core_of = ROOT
+		    } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	dnipro_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+				OR = {
+				controls_state = 226
+				owns_state = 226
+			}
+		 }
+			ROOT = {
+			  OR = {
+				controls_state = 912
+				owns_state = 912
+			}
+		 }
+		 
+		}
+	 }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = UKG
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			226 = {
+			add_core_of = ROOT
+		    } 
+			912 = {
+				add_core_of = ROOT
+            } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	prychormorja_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+				OR = {
+				controls_state = 192
+				owns_state = 192
+			}
+		   }
+			ROOT = {
+			 OR = {
+				controls_state = 910
+				owns_state = 910
+			}
+		   }
+			ROOT = {
+			   OR = {
+				controls_state = 197
+				owns_state = 197
+			}
+		   }
+		 
+		}
+	 }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {
+			tag = ODE
+			tag = MYK
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			192 = {
+			add_core_of = ROOT
+		    } 
+			910 = {
+			 add_core_of = ROOT
+            } 
+			197 = {
+				add_core_of = ROOT
+			} 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	donshynna_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  AND = {
+			ROOT = {
+			 OR = {
+				controls_state = 227
+				owns_state = 227
+			 }
+		  }
+			ROOT = {
+			 OR = {
+				controls_state = 228
+				owns_state = 228
+			}
+		  }
+		 
+		}
+	 }
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = PSL
+		 }		
+		}		
+		cost = 50		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			227 = {
+			add_core_of = ROOT
+		    } 
+			228 = {
+			add_core_of = ROOT
+            } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 50
+		}
+	}
+	northern_tavrija_integration = {		#ID of the decision, must not contain spaces!
+
+	icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+	# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+	
+	available = {
+	 
+	  AND = {
+		ROOT = {
+		  OR = {
+			controls_state = 909
+			owns_state = 909
+		  }
+		}
+		ROOT = {
+		 OR = {
+			controls_state = 196
+			owns_state = 196
+		  }
+		}
+	 }
+	}
+	
+	fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+	visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+	 NOT = {	
+		tag = KER
+	 }		
+	}		
+	cost = 50		#The cost to execute the decision, by default its political power.
+	days_remove = 50
+	# EFFECTS OF THIS DECISION/MISSION
+	remove_effect = {
+		909 = {
+		add_core_of = ROOT
+		} 
+		196 = {
+		 add_core_of = ROOT
+		} 
+		#The effects to execute once the mission expires/completes and enters the remove phase.
+	}
+	# AI LOGIC FOR THIS DECISION/MISSION
+
+	ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+		factor = 50
+	}
+  }
+  zaporizhja_integration = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+		 
+		  ROOT = {
+			OR = {
+				controls_state = 200
+				owns_state = 200
+			}
+		 }
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		visible = { #Conditions to make this decision visible, can be left blank to make it always appear.	
+		 NOT = {	
+			tag = PSL 
+		 }		
+		}		
+		cost = 25		#The cost to execute the decision, by default its political power.
+        days_remove = 50
+		# EFFECTS OF THIS DECISION/MISSION
+		remove_effect = {
+			200 = {
+			add_core_of = ROOT
+		    } 
+			#The effects to execute once the mission expires/completes and enters the remove phase.
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}
+}
+

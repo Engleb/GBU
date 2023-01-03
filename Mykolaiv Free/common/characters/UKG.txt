@@ -1,0 +1,16 @@
+characters={
+	UKG_Skoropadskyy={
+		name="Павло Скоропадський"
+		portraits={
+			civilian={
+				large ="GFX_Skoropadskyy"
+			}
+		}
+		country_leader={
+			traits={dictator }
+			ideology = oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+} 

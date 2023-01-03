@@ -3,3 +3,5 @@ KER = countries/Herson.txt
 ODE = countries/Odesa.txt
 OUN = countries/OUN.txt
 UKG = countries/UKG.txt
+SLB = countries/SLB.txt
+PSL = countries/PSL.txt

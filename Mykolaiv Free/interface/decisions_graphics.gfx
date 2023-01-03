@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Ukraine_map"
+		texturefile = "gfx/interface/decisions/Ukraine_map.dds"
+	}
+	spriteType = {
+		name = "GFX_category_icon"
+		texturefile = "gfx/interface/decisions/category_icon_template.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_default"
+		texturefile = "gfx/interface/decisions/decision_icon_default.dds"
+	}
+}
