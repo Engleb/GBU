@@ -30,4 +30,20 @@ spriteTypes = {
         name = "GFX_Skoropadskyy"
         texturefile = "gfx/leaders/UKG/Skoropadskyy.dds"
     }
+    spriteType = {
+        name = "GFX_Bandera"
+        texturefile = "gfx/leaders/OUN/Bandera.dds"
+    }
+    spriteType = {
+        name = "GFX_Melnyk"
+        texturefile = "gfx/leaders/OUN/Melnyk.dds"
+    }
+    spriteType = {
+        name = "GFX_Shus"
+        texturefile = "gfx/leaders/SLB/Shus.dds"
+    }
+    spriteType = {
+        name = "GFX_Ditrehs"
+        texturefile = "gfx/leaders/PSL/Ditrehs.dds"
+    }
 }

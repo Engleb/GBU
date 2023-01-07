@@ -1,47 +1,5 @@
 characters={
 
-	MYK_Kim={
-		name="Віталій Кім"
-		portraits={
-			civilian={
-				large ="GFX_Kim_Vitaliy"
-			}
-		}
-		country_leader={
-			traits={ liberal_democratic_paragon }
-			ideology = liberalism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	MYK_Butyrin={
-		name="Сергій Бутирін "
-		portraits={
-			civilian={
-				large ="GFX_portrait_MYK_Butyrin"
-			}
-		}
-		country_leader={
-			traits={  }
-			ideology = anti_revisionism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	MYK_Denys_Yantar={
-		name="Денис Янтар"
-		portraits={
-			civilian={
-				large ="GFX_Yantar"
-			}
-		}
-		country_leader={
-			traits={ anti_communist }
-			ideology = fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	MYK_Pokrovsyy={
 		name="Андрій Покровський "
 		portraits={
@@ -54,7 +12,7 @@ characters={
 		}
 		country_leader={
 			traits={ revolutionary_general  }
-			ideology = oligarchism
+			ideology = despotism
 			expire="1965.1.1.1"
 			id=-1
 		}

@@ -1,0 +1,16 @@
+characters={
+	PSL_Ditreht ={
+		name="Михайло Дітеріхс"
+		portraits={
+			civilian={
+				large ="GFX_Ditrehs"
+			}
+		}
+		country_leader={
+			traits={  }
+			ideology = fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+} 

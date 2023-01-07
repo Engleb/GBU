@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			traits={ great_war_hero }
-			ideology = fascism_ideology
+			ideology = ukranian_nationalism
 			expire="1965.1.1.1"
 			id=-1
 		}

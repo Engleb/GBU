@@ -3,14 +3,16 @@
 # ID's must not include spaces!
 # Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
 #####################################################################################################################
-simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
-	simple_decision = {		#ID of the decision, must not contain spaces!
+OUN_balance_of_powers  = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	right_side_1 = {		#ID of the decision, must not contain spaces!
 
 		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
 		
-		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		available = {
+			tag = OUN
+			has_country_flag = OUN_party_krisis		#Conditions that will allow the player/AI to click the decision and execute its effect.
 		}
 		
 		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.

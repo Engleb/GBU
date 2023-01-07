@@ -1,0 +1,28 @@
+ideas = {
+
+	country = {
+
+		party_crisis1 = {
+		picture = SOV_scientist_defect
+			
+			allowed = {
+			 always = no
+             tag = OUN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.15
+			}
+		}
+    
+	   
+				
+	}   
+}

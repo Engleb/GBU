@@ -1,0 +1,20 @@
+spriteTypes = {
+ spriteType = {
+        name = "GFX_1balans_Bandera"
+        texturefile = "gfx/interface/bop/Bandera1.dds"
+    }
+ spriteType = {
+        name = "GFX_2balans_Bandera"
+        texturefile = "gfx/interface/bop/Bandera2.dds"
+    }
+ spriteType = {
+        name = "GFX_1balans_Melnyk"
+        texturefile = "gfx/interface/bop/Melnyk1.dds"
+    }
+ spriteType = {
+        name = "GFX_2balans_Melnyk"
+        texturefile = "gfx/interface/bop/Melnyk2.dds"
+    }
+
+
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+ spriteType = {
+        name = "GFX_ideology_ukranian_nationalism"
+        texturefile = "gfx/interface/ideologies/ukranian_nationalism.dds"
+    }
+}

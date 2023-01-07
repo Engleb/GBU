@@ -1,0 +1,16 @@
+characters={
+	SLB_Shus={
+		name="Федосій Щусь"
+		portraits={
+			civilian={
+				large ="GFX_Shus"
+			}
+		}
+		country_leader={
+			traits={  }
+			ideology = anarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+} 

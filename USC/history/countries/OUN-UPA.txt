@@ -56,7 +56,13 @@ if = {
 	}
 }
 
+set_country_flag = OUN_party_krisis
+
 recruit_character = OUN_Konovalec
+
+
+add_ideas ={party_crisis1}
+
 
 set_politics = {
 	ruling_party = fascism

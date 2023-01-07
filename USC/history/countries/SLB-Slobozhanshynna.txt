@@ -42,20 +42,21 @@ if = {
 	}
 }
 
+recruit_character = SLB_Shus
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1933.1.30"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 set_popularities = { #popularities based on 1933 election statistics.
-	democratic = 10
-	fascism = 30
+	democratic = 5
+	fascism = 5
 
-	communism = 55
-	neutrality = 5
+	communism = 40
+	neutrality = 50
 }
 
 

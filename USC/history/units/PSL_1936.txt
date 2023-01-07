@@ -1,0 +1,102 @@
+﻿division_template = {
+	name = "Dyvizija Gospoda"			
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Mehanizovana Dyvizija"
+	division_names_group = ENG_CAV_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division= { # "Motoryzacija"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11405
+		division_template = "Mehanizovana Dyvizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= { # "Stolychna Pihotna dyv."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6474
+		division_template = "Dyvizija Gospoda"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= { # "Luhanska Pihotna dyv."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9461
+		division_template = "Dyvizija Gospoda"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 502
+		division_template = "Dyvizija Gospoda"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3449
+		division_template = "Dyvizija Gospoda"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3399
+		division_template = "Dyvizija Gospoda"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6596
+		division_template = "Dyvizija Gospoda"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+}

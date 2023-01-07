@@ -4,13 +4,15 @@
 #####################################################################################################################
 OUN_balance_of_powers = {		#ID of category
 	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
-	icon = GFX_category_icon	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	icon = GFX_decision_category_power_struggle 	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
 	
 	allowed = {
-	  always = no
+	  tag = OUN
+	  has_country_flag = OUN_party_krisis
 	}
 	visible = {
-		tag = OUN		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	 tag = OUN	
+	 has_country_flag = OUN_party_krisis	#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
 	}
 }
 
