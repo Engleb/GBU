@@ -1,0 +1,287 @@
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 190
+@POPULARITY_TEXT_X = 280
+@BONUSES_TEXT_X = 385
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+guiTypes = {
+
+	containerWindowType = {
+		name = "oun_scripted_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 250 }
+
+		
+		#party unity
+		iconType = {
+			name ="party_unity"
+			spriteType = "GFX_decision_category_generic"
+			position = { x = 175 y = 215 }
+		}
+		
+		instantTextBoxType = {
+			name ="party_unity_text"
+			position = { x = 200 y = 200 }
+			font = "hoi_18mbs"
+			text = "Єдність партії"
+			format = left
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="OUN_party_unity"
+			position = { x = 200 y = 225 }
+			font = "hoi_18mbs"
+			text = "[?OUN_regim_stability|+0]"
+			format = center
+			maxwidth = 110
+		}
+		#ICONS
+		iconType = {
+			name ="Icon_ounm"
+			spriteType = "GFX_decision_ounm"
+			position = { x = @FACTION_ICONS_X y = 30 }
+		}
+
+		instantTextBoxType = {
+			name ="ounm_name_text"
+			position = { x = @FACTION_NAMES_X y = 40 }
+			font = "hoi_18mbs"
+			text = "ОУН-М"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="ounm_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = BUL_ZVENO_TOOLTIP
+		}
+
+		iconType = {
+			name ="Icon_OunB"
+			spriteType = "GFX_decision_ounb"
+			position = { x = @FACTION_ICONS_X y = 75 }
+		}
+
+		instantTextBoxType = {
+			name ="ounb_name_text"
+			position = { x = @FACTION_NAMES_X y = 85 }
+			font = "hoi_18mbs"
+			text = "ОУН-Б"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="ounb_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 75 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = BUL_BS_TOOLTIP
+		}
+        # NNSP - Націонал Соціалістична партія (new - nsp)
+		iconType = {
+			name ="nsp_icon"
+			spriteType = "GFX_decision_nps"
+			position = { x = @FACTION_ICONS_X y = 120 }
+		}
+
+		instantTextBoxType = {
+			name ="nsp_name_text"
+			position = { x = @FACTION_NAMES_X y = 130 }
+			font = "hoi_18mbs"
+			text = "НСП"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="nsp_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 120 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = BUL_BZNS_TOOLTIP
+		}
+        
+		iconType = {
+			name ="halychyna_icon"
+			spriteType = "GFX_decision_hn"
+			position = { x = @FACTION_ICONS_X y = 165 }
+		}
+
+		instantTextBoxType = {
+			name ="halychyna_name_text"
+			position = { x = @FACTION_NAMES_X y = 175 }
+			font = "hoi_18mbs"
+			text = "Галицькі націоналісти"
+			format = left
+			maxHeight = 24
+		}
+         
+		#LOYALTY
+		instantTextBoxType = {
+			name ="loyalty_header"
+			position = { x = @LOYALTY_TEXT_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "Лояльність"
+			format = center
+			maxHeight = 24
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="OUN_ounm_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = 40 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetOunMLoyaltyStatus]"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="OUN_ounb_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = 85 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetOunBLoyaltyStatus]"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="OUN_nps_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = 130 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetNpsLoyaltyStatus]"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="OUN_hn_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = 175 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetHnLoyaltyStatus]"
+			format = center
+			maxwidth = 110
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="loyalty_tooltip_fake"
+			position = { x = @LOYALTY_TEXT_X y = @HEADERS_Y }
+			format = center
+			maxwidth = 110
+			maxHeight = 205
+			pdx_tooltip = BUL_LOYALTY_TOOLTIP
+		}
+
+		#POPULARITY 
+		instantTextBoxType = {
+			name ="popularity_header"
+			position = { x = @POPULARITY_TEXT_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "BUL_ui_popularity_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_ounm_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = 40 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetOunMPopularityStatus]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_ounb_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = 85 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetOunBPopularityStatus]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_nsp_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = 130 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetNspPopularityStatus]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_hn_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = 175  }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetHnPopularityStatus]"
+			format = center
+			maxwidth = 120
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="popularity_tooltip_fake"
+			position = { x = @POPULARITY_TEXT_X y = @HEADERS_Y }
+			format = center
+			maxwidth = 110
+			maxHeight = 205
+			pdx_tooltip = BUL_POPULARITY_TOOLTIP
+		}
+		#BONUSES
+		instantTextBoxType = {
+			name ="bonus_header"
+			position = { x = @BONUSES_TEXT_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "Модифікатори" #pp + 
+			format = center
+			maxHeight = 24
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_ounm_bonus_status"
+			position = { x = @BONUSES_TEXT_X y = 40 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetOunMBonus]" #scripted localisation
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_ounb_bonus_status"
+			position = { x = @BONUSES_TEXT_X y = 85 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetOunBBonus]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_nnsp_bonus_status"
+			position = { x = @BONUSES_TEXT_X y = 130 }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetNsPBonus]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="OUN_hn_bonus_status"
+			position = { x = @BONUSES_TEXT_X y = 175  }
+			font = "hoi_18mbs"
+			text = "[ROOT.GetHnBonus]"
+			format = center
+			maxwidth = 120
+		}
+	}
+}
